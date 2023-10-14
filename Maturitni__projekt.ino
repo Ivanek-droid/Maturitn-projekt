@@ -1,4 +1,4 @@
-int last = 8;
+int last = 8; 
 int dataPin1 = 12;
 int clockPin1 = 10;
 int latchPin1 = 11;
