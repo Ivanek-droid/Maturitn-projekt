@@ -1,0 +1,18 @@
+if(Serial.available()>0){
+
+income = Serial.read();
+
+if(income =='F'){
+  String receivedString = Serial.readString();
+    Serial.println(receivedString);
+    slovo = receivedString;
+  ascii();
+}
+if(income =='0'){
+  none();
+}
+if(income =='1'){
+  full();
+}
+}
+}
