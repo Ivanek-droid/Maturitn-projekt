@@ -1208,3 +1208,95 @@ digitalWrite(layers[0],1);
 }
 }
 }
+void own(){
+
+
+}
+void time(){
+
+
+}
+void temp1(){
+
+
+}
+void temp2(){
+
+  
+}
+void rain(){
+
+
+}
+void cube(){
+
+
+}
+void layer1(){
+
+
+}
+void layer2(){
+
+  
+}
+void layer3(){
+
+  
+}
+void pivo(){
+
+
+}
+void laser1(){
+
+
+}
+void laser2(){
+
+  
+}
+void laser3(){
+
+  
+}
+void sign(){
+
+
+}
+void pingpong(){
+
+
+}
+void laserall(){
+
+
+}
+void layerall(){
+
+
+}
+void tetris(){
+
+
+}
+void snake(){
+
+
+}
+void alarm(){
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
