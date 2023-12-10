@@ -1,100 +1,65 @@
-#ifndef __abc_H__
-#define __abc_H__
+#ifndef __temp1_H__
+#define __temp1_H__
 #include "variables.h"
+#include "dht.h"
+
+#define dht_apin A0
+
+dht DHT;
 
 
-void abc(){
+void temp1(){
+  
+  DHT.read11(dht_apin);
 
 
-for(int j = 0;j<=28;j++){
+  int int__teplota = DHT.temperature;
+
+  String teplota = String(int__teplota);
+  Serial.println(teplota);
+  delay(100);
+
+for (int i = 0; i < slovo.length(); i++) {
+  char znak = slovo.charAt(i);
+
+}
+
+for(int j = 0;j< teplota.length();j++){
+    char znak = teplota.charAt(j);
  for (int k = 0; k <= 7; k++) {
-   for (int l = 0; l <= 40; l++) {
+   for (int l = 0; l <= 30; l++) {
      for (int i = 0; i <= 7; i++) {
 
-   switch(j){
-    case 1:
-    currentElement = A[i];
-    break;
-    case 2:
-    currentElement = B[i];
-    break;
-    case 3:
-    currentElement = C[i];
-    break;
-    case 4:
-    currentElement = D[i];
-    break;
-    case 5:
-    currentElement = E[i];
-    break;
-    case 6:
-    currentElement = F[i];
-    break;
-    case 7:
-    currentElement = G[i];
-    break;
-    case 8:
-    currentElement = H[i];
-    break;
-    case 9:
-    currentElement = I[i];
-    break;
-    case 10:
-    currentElement = J[i];
-    break;
-    case 11:
-    currentElement = K[i];
-    break;
-    case 12:
-    currentElement = L[i];
-    break;
-    case 13:
-    currentElement = M[i];
-    break;
-    case 14:
-    currentElement = N[i];
-    break;
-    case 15:
-    currentElement = O[i];
-    break;
-    case 16:
-    currentElement = P[i];
-    break;
-    case 17:
-    currentElement = Q[i];
-    break;
-    case 18:
-    currentElement = R[i];
-    break;
-    case 19:
-    currentElement = S[i];
-    break;
-    case 20:
-    currentElement = T[i];
-    break;
-    case 21:
-    currentElement = U[i];
-    break;
-    case 22:
-    currentElement = V[i];
-    break;
-    case 23:
-    currentElement = W[i];
-    break;
-    case 24:
-    currentElement = X[i];
-    break;
-    case 25:
-    currentElement = Y[i];
-    break;
-    case 26:
-    currentElement = Z[i];
-    break;
-    case 27:
+   switch(znak){
+    case '0':
     currentElement = zero[i];
     break;
-    case 28:
+    case '1':
     currentElement = one[i];
+    break;
+    case '2':
+    currentElement = two[i];
+    break;
+    case '3':
+    currentElement = three[i];
+    break;
+    case '4':
+    currentElement = four[i];
+    break;
+    case '5':
+    currentElement = five[i];
+    break;
+    case '6':
+    currentElement = six[i];
+    break;
+    case '7':
+    currentElement = seven[i];
+    break;
+    case '8':
+    currentElement = eight[i];
+    break;
+    case '9':
+    currentElement = nine[i];
     break;
   }
   switch(k){
@@ -173,7 +138,6 @@ for(int j = 0;j<=28;j++){
     break;
 
   }
-    
     switch(i){
     case 0:
     digitalWrite(layers[0],0);
@@ -186,7 +150,7 @@ for(int j = 0;j<=28;j++){
     digitalWrite(layers[7],1);
     break;
     case 1:
-    digitalWrite(layers[0],1);
+digitalWrite(layers[0],1);
     digitalWrite(layers[1],0);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
@@ -262,6 +226,7 @@ digitalWrite(layers[0],1);
 } 
 }
 }
+
 }
 
 

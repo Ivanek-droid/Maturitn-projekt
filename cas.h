@@ -1,100 +1,75 @@
-#ifndef __abc_H__
-#define __abc_H__
+#ifndef __cas_H__
+#define __cas_H__
 #include "variables.h"
+#include "datum.h"
 
 
-void abc(){
 
 
-for(int j = 0;j<=28;j++){
+
+void time(){
+
+ myRTC.updateTime();
+
+  int int_mesic = myRTC.month;
+  int int_rok = myRTC.year;
+  int int_hodiny = myRTC.hours;
+  int int_minuty = myRTC.minutes;
+  int int_den = myRTC.dayofmonth;
+
+
+  String str_rok = String(int_rok);
+  String str_den = String(int_den);
+  String str_mesic = String(int_mesic);
+  String str_hodiny = String(int_hodiny);
+  String str_minuty = String(int_minuty);
+
+  String str_cas = str_hodiny + ":" + str_minuty + "";
+
+for (int i = 0; i < slovo.length(); i++) {
+  char znak = slovo.charAt(i);
+
+}
+
+for(int j = 0;j< str_cas.length();j++){
+    char znak = str_cas.charAt(j);
  for (int k = 0; k <= 7; k++) {
    for (int l = 0; l <= 40; l++) {
      for (int i = 0; i <= 7; i++) {
 
-   switch(j){
-    case 1:
-    currentElement = A[i];
-    break;
-    case 2:
-    currentElement = B[i];
-    break;
-    case 3:
-    currentElement = C[i];
-    break;
-    case 4:
-    currentElement = D[i];
-    break;
-    case 5:
-    currentElement = E[i];
-    break;
-    case 6:
-    currentElement = F[i];
-    break;
-    case 7:
-    currentElement = G[i];
-    break;
-    case 8:
-    currentElement = H[i];
-    break;
-    case 9:
-    currentElement = I[i];
-    break;
-    case 10:
-    currentElement = J[i];
-    break;
-    case 11:
-    currentElement = K[i];
-    break;
-    case 12:
-    currentElement = L[i];
-    break;
-    case 13:
-    currentElement = M[i];
-    break;
-    case 14:
-    currentElement = N[i];
-    break;
-    case 15:
-    currentElement = O[i];
-    break;
-    case 16:
-    currentElement = P[i];
-    break;
-    case 17:
-    currentElement = Q[i];
-    break;
-    case 18:
-    currentElement = R[i];
-    break;
-    case 19:
-    currentElement = S[i];
-    break;
-    case 20:
-    currentElement = T[i];
-    break;
-    case 21:
-    currentElement = U[i];
-    break;
-    case 22:
-    currentElement = V[i];
-    break;
-    case 23:
-    currentElement = W[i];
-    break;
-    case 24:
-    currentElement = X[i];
-    break;
-    case 25:
-    currentElement = Y[i];
-    break;
-    case 26:
-    currentElement = Z[i];
-    break;
-    case 27:
+   switch(znak){
+    case '0':
     currentElement = zero[i];
     break;
-    case 28:
+    case '1':
     currentElement = one[i];
+    break;
+    case '2':
+    currentElement = two[i];
+    break;
+    case '3':
+    currentElement = three[i];
+    break;
+    case '4':
+    currentElement = four[i];
+    break;
+    case '5':
+    currentElement = five[i];
+    break;
+    case '6':
+    currentElement = six[i];
+    break;
+    case '7':
+    currentElement = seven[i];
+    break;
+    case '8':
+    currentElement = eight[i];
+    break;
+    case '9':
+    currentElement = nine[i];
+    break;
+    case ':':
+    currentElement = pomlcka[i];
     break;
   }
   switch(k){
@@ -173,7 +148,6 @@ for(int j = 0;j<=28;j++){
     break;
 
   }
-    
     switch(i){
     case 0:
     digitalWrite(layers[0],0);
@@ -186,7 +160,7 @@ for(int j = 0;j<=28;j++){
     digitalWrite(layers[7],1);
     break;
     case 1:
-    digitalWrite(layers[0],1);
+digitalWrite(layers[0],1);
     digitalWrite(layers[1],0);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
@@ -262,7 +236,11 @@ digitalWrite(layers[0],1);
 } 
 }
 }
+
 }
+
+
+
 
 
 #endif
