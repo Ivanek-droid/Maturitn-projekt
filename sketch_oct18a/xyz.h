@@ -48,7 +48,7 @@
 
        }
  
-     Serial.println(casomira);
+
     digitalWrite(layers[0],0);
     digitalWrite(layers[1],0);
     digitalWrite(layers[2],0); 

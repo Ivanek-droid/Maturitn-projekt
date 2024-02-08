@@ -2,7 +2,17 @@
 #define __cube3_H__
 #include "variables.h"
 
+
+
+
 void kostka3(){
+  
+/*unsigned long interval3 = 5000;
+unsigned long  prev3 = 0;
+unsigned long start3 = millis();
+
+
+while(start3 - prev3 > interval3){ */
 
 for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
  for (int k = 0; k <= 2; k++) {       //poradi steny                       
@@ -28,13 +38,13 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     shiftOut(dataPin1,clockPin1,LSBFIRST,nott);
     digitalWrite(latchPin1,1);
     
-    digitalWrite(latchPin4,0);
-    shiftOut(dataPin4,clockPin4,LSBFIRST,currentElement);
-    digitalWrite(latchPin4,1);
+    digitalWrite(latchPin3,0);
+    shiftOut(dataPin3,clockPin3,LSBFIRST,currentElement);
+    digitalWrite(latchPin3,1);
 
-    digitalWrite(latchPin4,0);
-    shiftOut(dataPin4,clockPin4,LSBFIRST,nott);
-    digitalWrite(latchPin4,1);
+    digitalWrite(latchPin3,0);
+    shiftOut(dataPin3,clockPin3,LSBFIRST,nott);
+    digitalWrite(latchPin3,1);
 
     break;
     case 2:
@@ -46,13 +56,13 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     shiftOut(dataPin2,clockPin2,LSBFIRST,nott);
     digitalWrite(latchPin2,1);
 
-    digitalWrite(latchPin3,0);
-    shiftOut(dataPin3,clockPin3,LSBFIRST,anotherelement);
-    digitalWrite(latchPin3,1);
+    digitalWrite(latchPin4,0);
+    shiftOut(dataPin4,clockPin4,LSBFIRST,nott);
+    digitalWrite(latchPin4,1);
 
-    digitalWrite(latchPin3,0);
-    shiftOut(dataPin3,clockPin3,LSBFIRST,nott);
-    digitalWrite(latchPin3,1);
+    digitalWrite(latchPin4,0);
+    shiftOut(dataPin4,clockPin4,LSBFIRST,nott);
+    digitalWrite(latchPin4,1);
 
     digitalWrite(latchPin5,0);
     shiftOut(dataPin5,clockPin5,LSBFIRST,nott);
@@ -76,7 +86,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     
     switch(i){
     case 0:
-    digitalWrite(layers[0],0);
+    digitalWrite(layers[0],1);
     digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
@@ -87,7 +97,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     break;
     case 1:
     digitalWrite(layers[0],1);
-    digitalWrite(layers[1],0);
+    digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
     digitalWrite(layers[4],1);
@@ -98,7 +108,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     case 2:
     digitalWrite(layers[0],1);
     digitalWrite(layers[1],1);
-    digitalWrite(layers[2],0);
+    digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
     digitalWrite(layers[4],1);
     digitalWrite(layers[5],1);
@@ -109,7 +119,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     digitalWrite(layers[0],1);
     digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
-    digitalWrite(layers[3],0);
+    digitalWrite(layers[3],1);
     digitalWrite(layers[4],1);
     digitalWrite(layers[5],1);
     digitalWrite(layers[6],1);
@@ -120,7 +130,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
-    digitalWrite(layers[4],0);
+    digitalWrite(layers[4],1);
     digitalWrite(layers[5],1);
     digitalWrite(layers[6],1);
     digitalWrite(layers[7],1);
@@ -160,8 +170,9 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     //delay(5);
   }
 } 
-//}
 }
 }
+
+//prev3 = start3;
 
 #endif

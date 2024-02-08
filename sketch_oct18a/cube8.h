@@ -178,6 +178,8 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat    m
 } 
 //}
 }
+
+
 }
 
 

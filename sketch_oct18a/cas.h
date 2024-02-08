@@ -4,9 +4,6 @@
 #include "datum.h"
 
 
-
-
-
 void time(){
 
  myRTC.updateTime();

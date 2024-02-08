@@ -80,7 +80,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     
     switch(i){
     case 0:
-    digitalWrite(layers[0],0);
+    digitalWrite(layers[0],1);
     digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
@@ -91,7 +91,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     break;
     case 1:
     digitalWrite(layers[0],1);
-    digitalWrite(layers[1],0);
+    digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
     digitalWrite(layers[4],1);
@@ -102,7 +102,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     case 2:
     digitalWrite(layers[0],1);
     digitalWrite(layers[1],1);
-    digitalWrite(layers[2],0);
+    digitalWrite(layers[2],1);
     digitalWrite(layers[3],1);
     digitalWrite(layers[4],1);
     digitalWrite(layers[5],1);
@@ -113,7 +113,7 @@ for(int j = 0;j<=2;j++){             //pocet prvku, ktere se maji printovat
     digitalWrite(layers[0],1);
     digitalWrite(layers[1],1);
     digitalWrite(layers[2],1);
-    digitalWrite(layers[3],0);
+    digitalWrite(layers[3],1);
     digitalWrite(layers[4],1);
     digitalWrite(layers[5],1);
     digitalWrite(layers[6],1);
